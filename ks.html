@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        background-color: aliceblue;
+      }
+      header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        background-color: grey;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        background-color: lightgrey;
+        padding: 10px 15px;
+      }
+      main {
+        width: 80%;
+        max-width: 800px;
+        margin: 30px auto;
+      }
+      .card_section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      article {
+        background-color: white;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      @media (max-width: 600px) {
+        .card_section {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 300px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        .card_section {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Web Page</h1>
+      <p>Flex, Grid, Media Query Practice</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JS</a>
+    </nav>
+    <main>
+      <section class="card_section">
+        <article>
+          <h2>HTML</h2>
+          <p>HTML은 웹 페이지 구조를 만드는 언어입니다.</p>
+        </article>
+        <article>
+          <h2>CSS</h2>
+          <p>CSS는 웹 페이지 디자인을 꾸미는 언어입니다.</p>
+        </article>
+        <article>
+          <h2>Respoxive web</h2>
+          <p>반응형 웹은 화면 크기에 따라 웹 구조가 바뀝니다.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
