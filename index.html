@@ -1,91 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한동대 주변 맛집 추천</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한동대 주변 맛집 추천</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <span>🍚</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li class="dropdown">
+            <a href="restaurant_korean.html">menu</a>
+            <div class="dropdown-content">
+              <a href="restaurant_korean.html">한식</a>
+              <a href="restaurant_chinese.html">중식</a>
+              <a href="restaurant_japanese.html">일식</a>
+              <a href="restaurant_vietnam.html">베트남</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="price_1.html">price</a>
+            <div class="dropdown-content">
+              <a href="price_1.html">💰 </a>
+              <a href="price_2.html">💰💰 </a>
+              <a href="price_3.html">💰💰💰 </a>
+            </div>
+          </li>
+        </ul>
+        <li><a href="rating.html">rating</a></li>
+      </nav>
+    </header>
 
-<header>
-  <div class="logo-area">
-    <span>🍚</span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">home</a></li>
-      <li class="dropdown">
-        <a href="restaurant_korean.html">menu</a>
-        <div class="dropdown-content">
-          <a href="restaurant_korean.html">한식</a>
-          <a href="restaurant_chinese.html">중식</a>
-          <a href="restaurant_japanese.html">일식</a>
-          <a href="restaurant_vietnam.html">베트남</a>
+    <main>
+      <!-- 오늘의 BEST -->
+      <div class="best-section">
+        <div>
+          <div class="best-title">오늘의 BEST 👑</div>
+          <img
+            class="best-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1280px-Dolsot-bibimbap.jpg"
+            alt="오늘의 베스트 맛집"
+          />
         </div>
-      </li>
-      <li><a href="rating.html">rating</a></li>
-      <li class="dropdown">
-        <a href="price_1.html">price</a>
-        <div class="dropdown-content">
-          <a href="price_1.html">💰 </a>
-          <a href="price_2.html">💰💰 </a>
-          <a href="price_3.html">💰💰💰 </a>
+        <div class="best-reviews">
+          <div class="review-item">
+            <div class="review-author">밥먹는인간</div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              평소 후기 좋은 식당이라고 들어서 방문했는데 왜 평점이 높은지 바로 이해됐습니다. 음식 맛은 물론이고
+              플레이팅이나 매장 청결 상태까지 세심하게 관리된 느낌이었어요!
+            </p>
+          </div>
+          <div class="review-item">
+            <div class="review-author">노래하는강아지</div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              가격 대비 퀄리티가 훌륭해요. 특히 대표 메뉴가 인상적이었고 전체적으로 서비스가 매우 좋았습니다. 주문한
+              메뉴 전부 만족스러웠고 간도 적당해서 누구나 맛있게 먹을 수 있을 것 같습니다.
+            </p>
+          </div>
+          <div class="review-item">
+            <div class="review-author">땅*</div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              음식이 정말 깔끔하고 맛있었어요! 직원분들도 친절해서 기분 좋게 식사했습니다. 다음에 또 방문할게요~
+            </p>
+          </div>
         </div>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-
-  <!-- 오늘의 BEST -->
-  <div class="best-section">
-    <div>
-      <div class="best-title">오늘의 BEST 👑</div>
-      <img class="best-img"
-           src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1280px-Dolsot-bibimbap.jpg"
-           alt="오늘의 베스트 맛집">
-    </div>
-    <div class="best-reviews">
-      <div class="review-item">
-        <div class="review-author">밥먹는인간</div>
-        <div class="stars">★★★★★</div>
-        <p class="review-text">평소 후기 좋은 식당이라고 들어서 방문했는데 왜 평점이 높은지 바로 이해됐습니다. 음식 맛은 물론이고 플레이팅이나 매장 청결 상태까지 세심하게 관리된 느낌이었어요!</p>
       </div>
-      <div class="review-item">
-        <div class="review-author">노래하는강아지</div>
-        <div class="stars">★★★★★</div>
-        <p class="review-text">가격 대비 퀄리티가 훌륭해요. 특히 대표 메뉴가 인상적이었고 전체적으로 서비스가 매우 좋았습니다. 주문한 메뉴 전부 만족스러웠고 간도 적당해서 누구나 맛있게 먹을 수 있을 것 같습니다.</p>
-      </div>
-      <div class="review-item">
-        <div class="review-author">땅*</div>
-        <div class="stars">★★★★★</div>
-        <p class="review-text">음식이 정말 깔끔하고 맛있었어요! 직원분들도 친절해서 기분 좋게 식사했습니다. 다음에 또 방문할게요~</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- 카테고리 -->
-  <div class="category-grid">
-    <div class="category-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1280px-Dolsot-bibimbap.jpg" alt="한식">
-      <a class="category-label" href="restaurant_korean.html">한식</a>
-    </div>
-    <div class="category-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chinese_cuisine-Chow_mein-01.jpg/1280px-Chinese_cuisine-Chow_mein-01.jpg" alt="중식">
-      <a class="category-label" href="restaurant_chinese.html">중식</a>
-    </div>
-    <div class="category-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sashimi_platter.jpg/1280px-Sashimi_platter.jpg" alt="일식">
-      <a class="category-label" href="restaurant_japanese.html">일식</a>
-    </div>
-    <div class="category-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bowl_of_Pho.jpg/1280px-Bowl_of_Pho.jpg" alt="베트남">
-      <a class="category-label" href="restaurant_vietnam.html">베트남</a>
-    </div>
-  </div>
-
-</main>
-</body>
+      <!-- 카테고리 -->
+      <div class="category-grid">
+        <div class="category-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1280px-Dolsot-bibimbap.jpg"
+            alt="한식"
+          />
+          <a class="category-label" href="restaurant_korean.html">한식</a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chinese_cuisine-Chow_mein-01.jpg/1280px-Chinese_cuisine-Chow_mein-01.jpg"
+            alt="중식"
+          />
+          <a class="category-label" href="restaurant_chinese.html">중식</a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sashimi_platter.jpg/1280px-Sashimi_platter.jpg"
+            alt="일식"
+          />
+          <a class="category-label" href="restaurant_japanese.html">일식</a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bowl_of_Pho.jpg/1280px-Bowl_of_Pho.jpg"
+            alt="베트남"
+          />
+          <a class="category-label" href="restaurant_vietnam.html">베트남</a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
